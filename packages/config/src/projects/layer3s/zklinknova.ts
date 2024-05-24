@@ -27,6 +27,16 @@ export const zklinknova: Layer3 = underReviewL3({
       ],
     },
   },
+  chainConfig: {
+    name: 'zklinknova',
+    chainId: 810180,
+    explorerUrl: 'https://explorer.zklink.io',
+    explorerApi: {
+      url: 'https://explorer-api.zklink.io/api',
+      type: 'blockscout', // is the api compatible??
+    },
+    minTimestampForTvl: new UnixTime(1709273393),
+  },
   escrows: [
     {
       chain: 'optimism',
